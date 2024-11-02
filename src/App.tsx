@@ -187,7 +187,7 @@ function App() {
             </div>
             <div className="row w-full flex flex-col items-center">
               {card.map((item, index) => (
-                <div className="item px-[53px] justify-around py-[28px] flex w-full gap-[181px] odd:bg-[#F2F2F7]">
+                <div key={index} className="item px-[53px] justify-around py-[28px] flex w-full gap-[181px] odd:bg-[#F2F2F7]">
                   <p className="font-poppins text-[#457BFF] text-[32px] font-semibold"> {item.name} </p>
                   <p className="font-poppins font-medium text-xl"> 1yr </p>
                   <p className="font-poppins font-semibold text-2xl"> $13.99 </p>
